@@ -2,8 +2,121 @@
 <html lang="en">
     <head>
        <title> Excel Portfolio </title> 
+       <link rel="stylesheet" href="CSS/style.css">
+       <script src="JS/script.js"></script>
     </head>
-    <body>
 
+    <body>
+       
+        <nav>
+            <div class="logo">
+            </div> 
+            <section>
+                <a class="nav-item" href="#Home">Home</a>
+                <a class="nav-item" href="#Profile">Our Facilty</a>
+                <a class="nav-item" href="#Message">Message Us</a>
+            </section>
+        </nav>
+        <hr>
+        <section>
+            <section id="Home">
+                <!-- Home -->
+                <header>
+                    <h1>Hi <span id="span1"></span>, Welcome to website</h1>
+                </header>
+                <article>
+                    <p>Ini adalah website sekolah SD N 1 Archelin</p>
+                    <div class="banner" >
+                        <img src="asset/banner_sekolah.png" alt="gambar" id="g10">
+                    </div>
+                    <div class="about_text">
+                        
+                        <p>SD Negeri 1 Archelin adalah sekolah dasar terkemuka yang didedikasikan untuk memberikan pendidikan yang komprehensif dan membina kepada siswanya. Dengan tim guru yang profesional dan berpengalaman, sekolah menumbuhkan lingkungan belajar yang mendukung yang mendorong keunggulan akademik, kreativitas, dan pertumbuhan pribadi.
+                            Sekolah ini menawarkan berbagai fasilitas yang memenuhi beragam kebutuhan siswanya. Diantaranya adalah taman bermain yang luas untuk aktivitas fisik, kantin yang menyajikan makanan sehat dan lezat, serta ruang kelas modern yang dilengkapi dengan teknologi pendidikan terkini.
+                            Di SD Negeri 1 Archelin, kami percaya bahwa pendidikan bukan hanya sekedar akademis saja, namun juga perkembangan anak seutuhnya. Kurikulum kami dirancang untuk meningkatkan kemampuan berpikir kritis, pemecahan masalah, dan komunikasi, sekaligus membina kesejahteraan emosional, sosial, dan fisik siswa kami.
+                           
+                            Visi kami adalah menjadi sekolah dasar terkemuka di Archelin, yang dikenal karena komitmennya terhadap keunggulan akademik, metode pengajaran inovatif, dan kemitraan komunitas yang kuat. Kami bertujuan untuk memberdayakan siswa kami untuk menjadi individu yang percaya diri, ingin tahu, dan penuh kasih sayang yang dilengkapi untuk berhasil dalam dunia yang terus berubah.
+                         
+                            Misi kami adalah memberikan pendidikan berkualitas tinggi yang mempersiapkan siswa kami untuk pembelajaran seumur hidup, pertumbuhan pribadi, dan tanggung jawab sosial. Kami berupaya menciptakan lingkungan pembelajaran yang aman, inklusif, dan mendukung yang menumbuhkan kecintaan belajar, kreativitas, dan pemikiran kritis. Dengan bekerja sama dengan siswa, orang tua, dan komunitas, kami bertujuan untuk membangun masa depan yang lebih cerah bagi semua.
+                            </p>
+                    </div>
+                </article>   
+            </section>
+            <hr width="1368px">
+            <section id="Profile">
+                <!-- Our Profile -->
+                <header>
+                    <h1>Our Facility</h1>
+                 </header>
+                 <article class="faci">
+                   <div>
+                    <div class="profile_item1" ></div> 
+                   <h4>Professional Teacher</h4>
+                   </div>
+                   
+                
+                   <div>
+                    <div class="profile_item2" > </div>
+                        <h4>Comfort Class</h4>
+                  
+                   </div>
+                   <div>
+                    <div class="profile_item3" > </div> 
+                        <h4 id="Lib-3">Library</h4> 
+                   </div>
+                   <div>
+                   <div class="profile_item4" >  </div>
+                    <h4 id="Spo-4">Sport Field</h4>
+                   </div>
+                   
+
+                 </article>
+            </section> 
+            <hr width="1368px">
+            <section  id="Message">
+                <!-- message us -->
+                <header>
+                    <h1>Message Us</h1>
+                </header>
+                <section class="Message-2">
+                <section class="message">
+                        <!-- form -->
+                        <form   name="message_form">
+                            <label for="nama1" class="nama_label">Nama   :</label>
+                            <input type="text" id="nama" placeholder="Nama" class="nama_label">
+                            <br />
+                            <label for="tanhir" name="birth_date">Tanggal Lahir :</label>
+                            <input type="date" id="tanhir"  placeholder="Tanggal Lahir" class="tanhir-input" name="birth_date">
+                            <br />
+                            <label for="jekel">Jenis Kelamin :</label>
+                            <input type="radio" id="laki_laki" name="jekel" value="laki-laki" name="gender" >
+                            <label for="laki-laki">Laki-laki</label>
+                            <input type="radio" id="laki_laki" name="jekel" value="Perempuan"name="gender">
+                            <label for="Perempuan" name="gender">Perempuan</label>
+                            <br>
+                            <label for="Pesan" class="label-pesan"> Pesan : </label> 
+                            <textarea name="messages" placeholder="Pesan" class="text-pesan"></textarea>
+                            
+                            <br>
+
+                            <br>
+                            <input type="submit" value="Submit" class="submit" onclick="formValidation()"> 
+                        </form>
+                    </section>
+                    <section class="result">
+                        <!-- result -->
+                        <div class="form-result">
+                            <p>Nama :<span id="senderFN"></span></p>
+                            <p>Tanggal Lahir :<span id="senderBD"></span></p>
+                            <p>Jenis Kelamin :<span id="senderG"></span></p>
+                            <p>Pesan :<span id="senderM"></span></p>
+                        </div>
+                    </section>
+                </section>
+        </section> 
+        
+        <footer>
+            
+        </footer>
     </body>
 </html>
